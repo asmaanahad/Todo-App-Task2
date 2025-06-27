@@ -1,8 +1,11 @@
-import TodoApp from "./src/Component/Todo-App";
-
+import { Provider } from "react-redux";
+import Router from "./src/routes/Router";
+import store from "./src/Redux/store";
 
 export default function App() {
-  return <TodoApp />;
+  return (
+    <Provider store={store}>
+      <Router />
+    </Provider>
+  );
 }
-
-

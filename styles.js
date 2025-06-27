@@ -5,11 +5,8 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
-    justifyContent: "center",
     paddingBottom: 20,
-    paddingHorizontal: 10,
   },
-
   input: {
     borderWidth: 1,
     borderColor: "#aeaeae",
@@ -24,7 +21,7 @@ export const styles = StyleSheet.create({
     backgroundColor: "#000",
     justifyContent: "center",
     alignItems: "center",
-    padding: 15,
+    padding: 20,
     borderRadius: 10,
   },
   text: {
@@ -72,22 +69,25 @@ export const styles = StyleSheet.create({
     fontSize: 15,
   },
   todosContainer: {
-    width: "90%",
-    marginTop: 20,
-  },
-  todoItem: {
-    flexDirection: "row",
-    padding: 20,
-    borderRadius: 10,
-    borderWidth: 1,
-    borderColor: "#ccc",
-    width: "100%",
-    marginVertical: 5,
-    flexDirection: "row",
-    // alignItems: "center",
-    justifyContent: "space-between",
+    marginTop: 10,
   },
   doneTodo: {
     textDecorationLine: "line-through",
   },
+todoItem: {
+  backgroundColor: "#ffffff",
+  padding: 20,
+  marginVertical: 10,
+  borderRadius: 16,
+  borderWidth: 1,
+  borderColor: "#e0e0e0",
+
+  // للظل
+  elevation: 4, // لأندرويد
+  shadowColor: "#000",
+  shadowOffset: { width: 0, height: 2 },
+  shadowOpacity: 0.1,
+  shadowRadius: 6,
+}
+
 });
